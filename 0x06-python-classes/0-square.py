@@ -1,13 +1,7 @@
 #!/usr/bin/python3
 
-"""
-Square module
-
-The module defines a Square class.
-"""
+"""This is a shebang line"""
 
 class Square:
-    """
-      This empty class represents a squaree
-
+    """ This empty class represents a squaree"""
       pass
