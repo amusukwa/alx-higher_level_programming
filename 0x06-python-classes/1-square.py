@@ -3,13 +3,13 @@
 """Square module"""
 
 class Square:
-    """Class representing a square.
+    """This class represents a square.
 
     Attributes:
         __size (int): The size of the square.
 
     Methods:
-        __init__(self, size): Initializes a new Square instance.
+        __init__(self, size):This initializes a new Square instance.
     """
 
     def __init__(self, size):
@@ -24,7 +24,7 @@ class Square:
         self.__size = size
 
 def main():
-    """Main function to demonstrate Square class."""
+    """ The main function to demonstrate Square class."""
     square = Square(5)
     print(square.__dict__)
 
