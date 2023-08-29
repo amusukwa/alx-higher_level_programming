@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""
-Square module
+"""This is shebang line"""
+"""Square module"""
 
 class Square:
     """ This class represents a square.
