@@ -1,11 +1,5 @@
-
 #!/usr/bin/python3
-
-"""
-Square module
-
-The module defines a class
-"""
+"""This is a shebang line"""
 
 class Square:
     """
