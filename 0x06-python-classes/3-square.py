@@ -5,7 +5,6 @@ Square module
 
 The module defines a class
 """
-
 class Square:
     """
     Class represents a square.
@@ -34,12 +33,11 @@ class Square:
         if size < 0:
             raise ValueError("size must be >= 0")
         self.__size = size
-
     def area(self):
         """
-        Calculates the area of the square.
+        Calculteas area of the square.
 
         Returns:
-            int: The area of the square.
+            int:The area of a square.
         """
         return self.__size ** 2
