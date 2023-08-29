@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 """This is shebang line"""
-"""Square module"""
 
 class Square:
-    """ This class represents a square.
+    """ This class represents a square """
 
     Attributes:
         __size (int): This is the size of the square.

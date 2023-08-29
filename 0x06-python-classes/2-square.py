@@ -2,15 +2,7 @@
 """This is a shebang line"""
 
 class Square:
-    """
-    Class represents a square.
-
-    Attributes:
-        size (int): size of the square.
-
-    Methods:
-        __init__(self, size=0): Initializes a Square instance.
-    """
+    """Class represents a square """
 
     def __init__(self, size=0):
         """
