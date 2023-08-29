@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+"""Square module"""
+
 class Square:
     """Class representing a square.
 
@@ -20,3 +22,11 @@ class Square:
             None
         """
         self.__size = size
+
+def main():
+    """Main function to demonstrate Square class."""
+    square = Square(5)
+    print(square.__dict__)
+
+if __name__ == "__main__":
+    main()
