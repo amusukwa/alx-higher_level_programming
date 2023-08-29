@@ -3,17 +3,11 @@
 """
 Square module
 
-This module defines the Square class.
+The module defines a Square class.
 """
 
 class Square:
     """
-    Empty class representing a square.
+      This empty class represents a squaree
 
-    Attributes:
-        None
-
-    Methods:
-        None
-    """
-    pass
+      pass
