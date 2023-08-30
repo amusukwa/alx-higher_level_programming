@@ -3,3 +3,5 @@
 
 class Square:
     """ This empty class represents a squaree"""
+
+    pass
