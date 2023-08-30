@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """ This is a shebang line """
+
+
 class Square:
     """
     Class represents a square"""
@@ -20,6 +22,7 @@ class Square:
         if size < 0:
             raise ValueError("size must be >= 0")
         self.__size = size
+
     def area(self):
         """
         Calculteas area of the square.
