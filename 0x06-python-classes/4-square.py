@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-""" This represents a shebang line"""
+"""This is a shebang line"""
 
 
 class Square:
-     """
+    """
     Class represents a square.
+
 
     def __init__(self, size=0):
         """
