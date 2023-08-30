@@ -1,18 +1,10 @@
 #!/usr/bin/python3
+""" This represents a shebang line"""
+
 
 class Square:
      """
     Class represents a square.
-
-    Attributes:
-        size (int):  Is size of the square.
-
-    Methods:
-        __init__(self, size=0):This Initializes a Square instance.
-        area(self): Calculates and returns the area of the square.
-        size(self): Getter method for size attribute.
-        size(self, value): Setter method for size attribute.
-    """
 
     def __init__(self, size=0):
         """
