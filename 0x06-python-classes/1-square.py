@@ -14,11 +14,3 @@ class Square:
             None
         """
         self.__size = size
-
-def main():
-    """  Main function to show Square class."""
-    square = Square(5)
-    print(square.__dict__)
-
-if __name__ == "__main__":
-    main()
