@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+
+
 def text_indentation(text):
     """
     Prints text with indentation.
@@ -18,4 +20,3 @@ def text_indentation(text):
         if char in '.:?':
             print('\n')
             new_line = True
-

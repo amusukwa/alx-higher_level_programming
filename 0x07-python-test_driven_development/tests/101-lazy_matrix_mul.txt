@@ -58,5 +58,3 @@ A minimum of two arguments must be provided.
     Traceback (most recent call last):
     TypeError: lazy_matrix_mul() missing 2 required positional arguments: 
     'm_a' and 'm_b'
-
-
