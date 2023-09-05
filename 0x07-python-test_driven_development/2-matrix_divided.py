@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
+
 def matrix_divided(matrix, div):
     """
-    Divide elements of a matrix by  div and round the result to 2 decimal places.
-
+    Divides matrix elements by div and rounds them to 2 decimal places.
     """
     if not isinstance(matrix, list) or not all(isinstance(row, list) for row in matrix):
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
