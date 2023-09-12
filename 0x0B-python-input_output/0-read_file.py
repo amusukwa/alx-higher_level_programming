@@ -3,9 +3,11 @@
 
 
 def read_file(filename=""):
-    """This function reads a text file"""
+    """This function reads text from a file"""
     try:
-        with open(filename, mode='r', encoding='utf-8') as file:
-            print(file.read(), end="")
+        file = open(filename, mode='r', encoding='utf-8')
+        print(file.read(), end="")
+        file.close()
     except FileNotFoundError:
         pass
+
