@@ -10,4 +10,3 @@ def read_file(filename=""):
         file.close()
     except FileNotFoundError:
         pass
-
