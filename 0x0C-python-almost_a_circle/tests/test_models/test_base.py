@@ -316,7 +316,7 @@ class TestBase_create(unittest.TestCase):
         s2 = Square.create(**s1_dictionary)
         self.assertEqual("[Square] (7) 5/1 - 3", str(s1))
 
-     def test_create_square_new(self):
+    def test_create_square_new(self):
         s1 = Square(3, 5, 1, 7)
         s1_dictionary = s1.to_dictionary()
         s2 = Square.create(**s1_dictionary)
@@ -542,7 +542,7 @@ class TestBase_load_from_file_csv(unittest.TestCase):
 
     def test_load_from_file_csv_more_than_one_arg(self):
         with self.assertRaises(TypeError):
-            Base.load_from_file_csv([], 1)        
+            Base.load_from_file_csv([], 1)
 
 
 if __name__ == "__main__":
