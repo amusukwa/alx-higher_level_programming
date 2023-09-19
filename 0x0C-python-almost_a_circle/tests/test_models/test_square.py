@@ -1,3 +1,11 @@
+#!/usr/bin/python3
+# test_square.py
+"""
+This module contains unit tests for the Square class in the models package.
+
+It includes test cases for the constructor, attributes, methods, and other behaviors
+of the Square class.
+"""
 import unittest
 from models.square import Square
 
@@ -60,6 +68,13 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(square.size, 10)
         self.assertEqual(square.x, 2)
         self.assertEqual(square.y, 3)
+        
+
+    def test_to_dictionary_no_object_changes(self):
+        s1 = Square(10, 2, 1, 2)
+        s2 = Square(1, 2, 10)
+        s2.update(**s1.to_dictionary())
+ 
 
 
 if __name__ == '__main__':
