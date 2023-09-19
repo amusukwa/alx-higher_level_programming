@@ -33,7 +33,17 @@ class TestBase(unittest.TestCase):
         b1 = Temp(12)
         json_str = Base.to_json_string([b1.to_dictionary()])
         expected = '[{"id": 12}]'
-        self.assertEqual(json_str, expected)       
+        self.assertEqual(json_str, expected)
+
+    def test_from_json_string_with_none(self):
+        json_list = Base.from_json_string(None)
+        self.assertEqual(json_list, [])
+
+    def test_from_json_string_with_valid_json(self):
+        json_str = '[{"id": 89}]'
+        json_list = Base.from_json_string(json_str)
+        self.assertEqual(json_list, [{"id": 89}])       
+        
         
 
     # Add more test cases for other methods as needed
