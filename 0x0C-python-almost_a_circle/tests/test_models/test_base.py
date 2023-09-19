@@ -1,7 +1,8 @@
 import unittest
 from models.base import Base
 
-class TestBase(unittest.TestCase):
+
+class TestBase(unittest.TestCase):    
     
     def test_constructor_with_id(self):
         b = Base(42)
@@ -25,6 +26,7 @@ class TestBase(unittest.TestCase):
         self.assertEqual(json_str, expected)
 
     # Add more test cases for other methods as needed
+
 
 if __name__ == '__main__':
     unittest.main()

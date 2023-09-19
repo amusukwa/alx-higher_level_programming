@@ -4,7 +4,6 @@
 from models.rectangle import Rectangle
 
 
-
 class Square(Rectangle):
 
     def __init__(self, size, x=0, y=0, id=None):
@@ -13,14 +12,12 @@ class Square(Rectangle):
 
 
     @property
-
     def size(self):
 
         return self.width
 
 
     @size.setter
-
     def size(self, value):
 
         self.width = value
@@ -29,7 +26,6 @@ class Square(Rectangle):
 
 
     def __str__(self):
-
         return "[Square] ({:d}) {:d}/{:d} - {:d}".format(self.id,
 
                                                          self.x,
@@ -40,9 +36,7 @@ class Square(Rectangle):
 
 
     def update(self, *args, **kwargs):
-
         if len(args):
-
             for i, arg in enumerate(args):
 
                 if i == 0:
@@ -71,7 +65,6 @@ class Square(Rectangle):
 
 
     def to_dictionary(self):
-
         return {
 
             "id": self.id,
