@@ -49,7 +49,17 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(square.x, 2)
         self.assertEqual(square.y, 5)
 
-    
+    def test_update_method_with_args(self):
+        square = Square(5)
+        square.update(10)
+        self.assertEqual(square.id, 10)
+
+    def test_update_method_with_args(self):
+        square = Square(5)
+        square.update(size=10, x=2, y=3)
+        self.assertEqual(square.size, 10)
+        self.assertEqual(square.x, 2)
+        self.assertEqual(square.y, 3)
 
 
 if __name__ == '__main__':
