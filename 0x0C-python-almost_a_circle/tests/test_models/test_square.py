@@ -1,31 +1,85 @@
 #!/usr/bin/python3
 
 
-import unittest
-
-from models.square import Square
+from models.rectangle import Rectangle
 
 
 
-class TestSquare(unittest.TestCase):
+class Square(Rectangle):
 
-    def test_initialization_success(self):
+    def __init__(self, size, x=0, y=0, id=None):
 
-        s1 = Square(5)
-
-        s2 = Square(10)
-
-        self.assertNotEqual(s1.id, 5)
-
-        self.assertNotEqual(s2.id, 6)
+        super().__init__(size, size, x, y, id)
 
 
-    def test_initialization_without_arguments(self):
+    @property
+
+    def size(self):
+
+        return self.width
 
 
-        self.assertRaises(TypeError, Square)
+    @size.setter
+
+    def size(self, value):
+
+        self.width = value
+
+        self.height = value
 
 
-if __name__ == '__main__':
+    def __str__(self):
 
-    unittest.main()
+        return "[Square] ({:d}) {:d}/{:d} - {:d}".format(self.id,
+
+                                                         self.x,
+
+                                                         self.y,
+
+                                                         self.width)
+
+
+    def update(self, *args, **kwargs):
+
+        if len(args):
+
+            for i, arg in enumerate(args):
+
+                if i == 0:
+
+                    self.id = arg
+
+                elif i == 1:
+
+                    self.size = arg
+
+                elif i == 2:
+
+                    self.x = arg
+
+                elif i == 3:
+
+                    self.y = arg
+
+        else:
+
+            for key, value in kwargs.items():
+
+                if hasattr(self, key) is True:
+
+                    setattr(self, key, value)
+
+
+    def to_dictionary(self):
+
+        return {
+
+            "id": self.id,
+
+            "size": self.size,
+
+            "x": self.x,
+
+            "y": self.y
+
+        }
