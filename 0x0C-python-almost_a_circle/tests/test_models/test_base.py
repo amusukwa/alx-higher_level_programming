@@ -24,6 +24,17 @@ class TestBase(unittest.TestCase):
         json_str = Temp.to_json_string([b1.to_dictionary(), b2.to_dictionary()])
         expected = '[{"id": 1}, {"id": 2}]'
         self.assertEqual(json_str, expected)
+    
+    def test_to_json_string_with_list(self):
+        class Temp(Base):
+            def to_dictionary(self):
+                return {"id": self.id}
+
+        b1 = Temp(12)
+        json_str = Base.to_json_string([b1.to_dictionary()])
+        expected = '[{"id": 12}]'
+        self.assertEqual(json_str, expected)       
+        
 
     # Add more test cases for other methods as needed
 
