@@ -8,6 +8,7 @@ of the Square class.
 """
 import unittest
 from models.square import Square
+from models.base import Base
 
 class TestSquare(unittest.TestCase):
 
@@ -32,6 +33,20 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(square3.x, 1)
         self.assertEqual(square3.y, 1)
         self.assertEqual(square3.id, 42)
+
+    def test_is_base(self):
+        self.assertIsInstance(Square(10), Base)
+
+    def test_no_args(self):
+        with self.assertRaises(TypeError):
+            Square()
+                
+    def test_size_private(self):
+        with self.assertRaises(AttributeError):
+            print(Square(10, 2, 3, 4).__size)
+
+    def test_size_getter(self):
+        self.assertEqual(5, Square(5, 2, 3, 9).size)    
 
     def test_size_property(self):
         square = Square(5)
