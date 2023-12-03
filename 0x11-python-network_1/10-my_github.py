@@ -20,4 +20,4 @@ if __name__ == "__main__":
     except ValueError:
         print("Not a valid JSON")
     except KeyError:
-        print("Invalid credentials or insufficient permissions")
+        print("None")
